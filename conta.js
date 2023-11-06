@@ -15,10 +15,10 @@ frm.addEventListener("submit", (e) => {        // "escuta" evento subimit do for
     numContas                        //adiciona contas ao contador a acumulador
     valTotal = valTotal + valor
 
-    resposta = resposta + descricao + " - R$: " + valor.toFized(2) + "\n"
+    resposta = resposta + descricao + " - R$: " + valor.toFixed(2) + "\n"
 
-    resp1.innerText = '${resposta}--------------------------------'
-    resp2.innerText = '${numContas} Conta(s) - Total R$: ${valTotal.toFixed(2)}'
+    resp1.innerText = `${resposta}--------------------------------`
+    resp2.innerText = `${numContas} Conta(s) - Total R$: ${valTotal.toFixed(2)}`
 
     frm.inDescricao.value = ""      // limpa campos do form
     frm.inValor.value = ""
