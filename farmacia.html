@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Farmacia JS</title>
+</head>
+<body>
+    <img src="img/Farmacia.png" alt="Desenho Farmácia">
+    <h1>Farmacia JavaScript</h1>
+    <h4>Para que possamos parcelar sua compra o valor mínimo de cada parcela deve ser de R$20,00 e o número máximo de 6 parcelas</h4>
+     <form>
+    <p>Valor da compra: R$
+        <input type="number" id = "inValor" min = "0" step="1.01" required>
+    </p>
+        <input type="submit" value="Parcelamento">
+        <input type="reset" value="Limpar Campo">
+    </form>
+    <h3 id = "outResp1"></h3>
+    <h3 id = "outResp2"></h3>
+    <script src="farmacia.js"></script>
+</body>
+</html>
