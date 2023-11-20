@@ -13,7 +13,7 @@ frm.addEventListener("submit", (e) =>{
     resp1.innerText = `Valor da compra: R$ ${valor.toFixed(2)}` //valor total do produto. Independente do número de parcelas
 
     let valParcelas                                //valor das parcelas
-    let numParcelas = Math.floor(valoe / 20)       //número de parcelas
+    let numParcelas = Math.floor(valor / 20)       //número de parcelas
 
 //parcelamento máximo em 6 x.
     if(numParcelas > 6){
